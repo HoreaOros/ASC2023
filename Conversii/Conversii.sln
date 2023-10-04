@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conversii", "Conversii\Conversii.csproj", "{EC79F3E6-EA40-4BB6-9547-F4C94D51ECC5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conversii2", "Conversii2\Conversii2.csproj", "{8F8DCD9E-224F-4D1A-A28F-1FF4110363EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{EC79F3E6-EA40-4BB6-9547-F4C94D51ECC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC79F3E6-EA40-4BB6-9547-F4C94D51ECC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC79F3E6-EA40-4BB6-9547-F4C94D51ECC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F8DCD9E-224F-4D1A-A28F-1FF4110363EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F8DCD9E-224F-4D1A-A28F-1FF4110363EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F8DCD9E-224F-4D1A-A28F-1FF4110363EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F8DCD9E-224F-4D1A-A28F-1FF4110363EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
