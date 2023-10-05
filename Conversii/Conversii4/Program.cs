@@ -1,19 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Conversii3
+namespace Conversii4
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            int n = int.Parse(Console.ReadLine());
-
-           ConvertFromDecimalToBinary(n);
-           ConvertFromDecimalToHex(n);
+            int n;
+            n = int.Parse(Console.ReadLine());
+            ConvertFromDecimalToBinary(n);
+            ConvertFromDecimalToHex(n);
         }
 
         private static void ConvertFromDecimalToHex(int n)
@@ -24,17 +25,14 @@ namespace Conversii3
                 stack.Push(n % 16);
                 n = n / 16;
             }
-
             while (stack.Count > 0)
             {
                 int d = stack.Pop();
-                if (d < 10)
-                {
+                if(d < 10)
                     Console.Write(d);
-                }
                 else
                 {
-                    switch (d)
+                    switch (d) 
                     {
                         case 10:
                             Console.Write("A");
@@ -57,7 +55,6 @@ namespace Conversii3
                     }
                 }
             }
-
             Console.WriteLine();
         }
 
@@ -69,12 +66,10 @@ namespace Conversii3
                 stack.Push(n % 2);
                 n = n / 2;
             }
-
             while (stack.Count > 0)
             {
                 Console.Write(stack.Pop());
             }
-
             Console.WriteLine();
         }
     }
