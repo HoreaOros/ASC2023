@@ -10,14 +10,57 @@ namespace Conversii2
     {
         static void Main(string[] args)
         {
-            int n;
-            Console.WriteLine("Introduceti un numar in baza 10:");
-            n = int.Parse(Console.ReadLine());
+            //int n;
+            //Console.WriteLine("Introduceți un număr in baza 10:");
+            //n = int.Parse(Console.ReadLine());
 
-            ConvertFromDecimalToBinary(n);
-            ConvertFromDecimalToHex(n);
+            //ConvertFromDecimalToBinary(n);
+            //ConvertFromDecimalToHex(n);
 
 
+            string number = "2AB";
+            int fromBase = 16;
+            Console.WriteLine(ConvertToDecimal(number, fromBase));
+
+
+            number = "10011";
+            fromBase = 2;
+            Console.WriteLine(ConvertToDecimal(number, fromBase));
+
+
+            number = "10021";
+            fromBase = 2;
+            Console.WriteLine(ConvertToDecimal(number, fromBase));
+
+
+        }
+
+        /// <summary>
+        /// Convertește un număr din baza fromBase (2-16) in baza 10
+        /// </summary>
+        /// <param name="number">Numărul care se convertește</param>
+        /// <param name="fromBase">Baza din care se face conversia</param>
+        /// <returns>Valoare lui number in baza 10</returns>
+        private static int ConvertToDecimal(string number, int fromBase)
+        {
+            int result = 0;
+
+            if (fromBase < 2 || fromBase > 16)
+                throw new ArgumentException("Baza este in afara limitelor acceptate");
+
+            string digits = "0123456789ABCDEF";
+
+
+            foreach (char item in number)
+            {
+                int index = digits.IndexOf(item, 0, fromBase);
+                if (index == -1)
+                    throw new ArgumentException($"Numărul nu este corect în baza {fromBase}");
+
+                result = result * fromBase + index;
+            }
+
+            return result;
         }
 
         private static void ConvertFromDecimalToHex(int n)
