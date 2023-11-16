@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9143B83F-DB16-4B7C-B9DF-F47AAA48396C}</ProjectGuid>
+    <ProjectGuid>{76CB9F83-46ED-4FA5-B589-79AEAD0B3419}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_1010</RootNamespace>
-    <AssemblyName>1010</AssemblyName>
+    <RootNamespace>BitOperators</RootNamespace>
+    <AssemblyName>BitOperators</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -35,7 +35,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
