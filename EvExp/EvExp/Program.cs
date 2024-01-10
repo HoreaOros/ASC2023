@@ -85,9 +85,7 @@ string ReversePolishNotation(string exp)
         else if (token == ")")
         {
             while (stack.Peek() != "(")
-            {
                 output.Add(stack.Pop());
-            }
             stack.Pop();
         }
         else if (IsOperator(token))
@@ -97,9 +95,7 @@ string ReversePolishNotation(string exp)
                 if (Priority(stack.Peek()) >= Priority(token))
                     output.Add(stack.Pop());
                 else
-                {
                     break;
-                }
             }
             stack.Push(token);
         }
